@@ -29,7 +29,6 @@ const images = [
 ];
 
 
-// Дякую за пораду. Я с початку не зовсім зрозумів що значить додати за одну операцію. Але я вирішив phj,bnb по своєму
 
 const containerGallery = document.querySelector('.gallery');
 containerGallery.insertAdjacentHTML('beforeend', createMarkup(images));
