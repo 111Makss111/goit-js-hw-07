@@ -36,3 +36,12 @@ clickCreate.addEventListener('click', () => {
 clickDestroy.addEventListener('click', () => {
   divBoxes.innerHTML = '';
 });
+
+
+
+
+
+
+
+
+

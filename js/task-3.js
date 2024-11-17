@@ -1,12 +1,17 @@
-const nameInput = document.querySelector("input#name-input");
-const nameOutput = document.querySelector("span#name-output");
+const inputEl = document.querySelector("#name-input");
+const spanEl = document.querySelector("#name-output");
 
-nameInput.addEventListener("input", function () {
-  const trimmedValue = nameInput.value.trim();
+inputEl.addEventListener("input", handleInput); 
 
-  if (trimmedValue === "") {
-    nameOutput.textContent = "Anonymous";
+function handleInput(event) {
+  const name = event.target.value.trim();
+  if (name === "") {
+    spanEl.textContent = "Anonymous";
   } else {
-    nameOutput.textContent = trimmedValue;
+    spanEl.textContent = name;
   }
-});
+};
+
+
+
+
