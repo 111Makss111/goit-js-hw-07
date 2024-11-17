@@ -5,8 +5,8 @@ function getRandomHexColor() {
 }
 
 function createBoxes(amount) {
-  divBoxes.innerHTML = ''; 
-  const fragment = document.createDocumentFragment(); 
+  divBoxes.innerHTML = '';
+  const fragment = document.createDocumentFragment();
 
   let size = 30;
   for (let i = 0; i < amount; i++) {
@@ -37,8 +37,6 @@ clickCreate.addEventListener('click', () => {
 clickDestroy.addEventListener('click', () => {
   divBoxes.innerHTML = ''; 
 });
-
-
 
 
 
